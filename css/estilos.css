@@ -1,0 +1,66 @@
+*{
+ margin: 0;   
+ padding: 0;
+}
+body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(94, 77, 57);
+    color: white; 
+    box-sizing: border-box;
+}
+.centrar{
+    text-align: center;
+}
+.centrar img{
+    width: 80px;
+    border-radius: 50%;
+}
+h1, h2{
+    text-align: center;
+}
+nav{
+    padding: 20px;
+    width: 90%; height: 80px;
+    margin: 0 auto;
+    background-color: rgba(206, 178, 143, 0.507);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.logo{
+    width: 60px;
+    margin: auto;
+    padding: 5px;
+}
+.Menú{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+nav .menú a{
+    color: beige;
+    text-decoration: none;
+    padding: 20px;
+}
+main .section1, .section3{
+    line-height: 2;
+    padding: 20px;
+
+}
+.section2{
+    text-align: center;
+}
+footer{
+    background-color: rgb(255, 254, 253);
+}
+h4{
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.achicar{
+    width: 500px;
+}

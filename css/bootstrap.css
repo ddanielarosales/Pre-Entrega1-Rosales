@@ -1,0 +1,30 @@
+.estilopropio{
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+.formulario{
+    width: 500px;
+    margin: 0 auto;
+    border: solid black 2px;
+    padding: 1rem;
+}
+.logo{
+    width: 80px;
+}
+.colorpropio{
+    background-color: rgba(241, 205, 157, 0.719);
+    border: solid color rgb(92, 31, 31) 20px;
+}
+.acordeon{
+    width: 700px;
+    margin: 20px auto;
+}
+.banco{
+    width: 100px;
+}
+.mercado{
+    width: 100px;
+}
+.efectivo{
+    width: 100px;
+}
