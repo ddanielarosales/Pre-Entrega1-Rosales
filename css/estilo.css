@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: white;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(255, 247, 239) nav;
+  background-color-padding: 20px;
+  background-color-width: 100%;
+  background-color-height: 100px;
+  background-color-margin: 0 auto;
+  background-color-background-color: aliceblue;
+  background-color-display: flex;
+  background-color-justify-content: space-evenly;
+  background-color-border-radius: 10px;
+  background-color-font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header .logo {
+  width: 40px;
+  margin: auto;
+  padding: 2px;
+}
+header h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1rem;
+}
+header .p-4estilopropio {
+  text-align: center;
+  color: rgb(127, 207, 174);
+  font-family: cursive;
+}
+
+main .section1, .section3 {
+  line-height: 2;
+  padding: 20px;
+}
+main .section1 .p-2lead, .section3 .p-2lead {
+  text-align: center;
+  font-size: x-large;
+  font-family: serif;
+}
+main .section1 .section2, .section3 .section2 {
+  text-align: center;
+  margin: 5rem;
+}
+
+section .acordeon {
+  width: 700px;
+  margin: 20px auto;
+}
+section .acordeon {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: solid rgb(194, 183, 183) 2px;
+  padding: 1rem;
+}
+section .accordion-header {
+  font-family: inherit;
+}
+section .banco {
+  width: 100px;
+}
+section .mercado {
+  width: 100px;
+}
+section .efectivo {
+  width: 100px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  background-color: rgba(236, 231, 223, 0.938);
+  width: 90%;
+  height: 100px;
+  margin: 5rem;
+}
+footer .socialink {
+  text-align: center;
+}
+footer .seguirclass {
+  font-family: cursive;
+}
+
+main contacto.html .contactolocal {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main contacto.html .contactoformulario {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+main contacto.html .formulario {
+  width: 500px;
+  margin-top: 74px;
+  margin-left: 675px;
+  border: solid rgb(204, 186, 186) 2px;
+  padding: 1rem;
+}
+main contacto.html .section2 {
+  text-align: center;
+  margin: 5rem;
+}
+
+main galeria.html .caja {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+main menu.html .principal {
+  text-align: center;
+  font-size: x-large;
+  font-family: cursive;
+  margin: 5rem;
+}
+main menu.html .subtitulo {
+  text-align: center;
+  font-size: x-large;
+  font-family: monospace;
+  margin: 2rem;
+}
+
+main sucursales.html .ubicaciones {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main sucursales.html .mapa {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main sucursales.html .local {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+main sucursales.html .mapa2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main sucursales.html .cafetera {
+  text-align: center;
+  margin: 5rem;
+}
+
+/*# sourceMappingURL=estilo.css.map */

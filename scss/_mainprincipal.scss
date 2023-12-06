@@ -1,0 +1,13 @@
+main .section1, .section3{
+    line-height: 2;
+    padding: $pad;
+    .p-2lead{
+        text-align: center;
+        font-size: x-large;
+        font-family: serif;
+    }
+    .section2{
+        text-align: center;
+        margin: 5rem;
+    }
+}

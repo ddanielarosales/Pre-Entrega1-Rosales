@@ -1,66 +1,170 @@
+
 *{
  margin: 0;   
  padding: 0;
-}
+} 
 body{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
-header{
-    background-color: rgb(94, 77, 57);
-    color: white; 
-    box-sizing: border-box;
-}
-.centrar{
-    text-align: center;
-}
-.centrar img{
-    width: 80px;
-    border-radius: 50%;
-}
-h1, h2{
-    text-align: center;
+@media screen and (max-widht: 420px){
+    nav{
+        background-color: darkgray;
+    } 
 }
 nav{
     padding: 20px;
-    width: 90%; height: 80px;
+    width: 100%; height: 100px;
     margin: 0 auto;
-    background-color: rgba(206, 178, 143, 0.507);
+    background-color: aliceblue;
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .logo{
-    width: 60px;
+    width: 40px;
     margin: auto;
-    padding: 5px;
-}
-.Menú{
-    list-style: none;
-    display: flex;
-    padding: 10px;
-}
-nav .menú a{
-    color: beige;
-    text-decoration: none;
-    padding: 20px;
+    padding: 2px;
 }
 main .section1, .section3{
     line-height: 2;
     padding: 20px;
-
+}
+.p-2lead{
+    text-align: center;
+    font-size: x-large;
+    font-family: serif;
+}
+.p-4estilopropio{
+    text-align: center;
+    color: rgb(127, 207, 174);
+    font-family: cursive;
+}
+header{
+    background-color: rgb(255, 247, 239);
+    color: white; 
+    box-sizing: border-box;
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    padding-top: 20px;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.principal{
+    text-align: center;
+    font-size: x-large;
+    font-family: cursive;
+    margin: 5rem;
+}
+.subtitulo{
+    text-align: center;
+    font-size: x-large;
+    font-family: monospace;
+    margin: 2rem;
+}
+h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+}
+.acordeon{
+    width: 700px;
+    margin: 20px auto;
+}
+.acordeon{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: solid rgb(194, 183, 183) 2px;
+    padding: 1rem;
+}
+.accordion-header{
+    font-family: inherit;
+}
+.contactolocal{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contactoformulario{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.formulario{
+    width: 500px;
+    margin-top: 74px;
+    margin-left: 675px;
+    border: solid rgb(204, 186, 186) 2px;
+    padding: 1rem
 }
 .section2{
     text-align: center;
+    margin: 5rem;
+}
+.banco{
+    width: 100px;
+}
+.mercado{
+    width: 100px;
+}
+.efectivo{
+    width: 100px;
+}
+.ubicaciones{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mapa{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.local{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mapa2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cafetera{
+    text-align: center;
+    margin: 5rem;
 }
 footer{
-    background-color: rgb(255, 254, 253);
-}
-h4{
     text-align: center;
+    font-size: 20px;
     color: black;
-    padding: 10px;
+    background-color: rgba(236, 231, 223, 0.938);
+    width: 90%; height: 100px;
+    margin: 5rem;
+}
+.socialink{
+    text-align: center;
+}
+.seguirclass{
+    font-family: cursive;
 }
 .achicar{
     width: 500px;
+}
+.estilopropio{
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+.colorpropio{
+    background-color: rgba(240, 223, 201, 0.719);
+    border: solid color rgb(92, 31, 31) 20px;
 }
