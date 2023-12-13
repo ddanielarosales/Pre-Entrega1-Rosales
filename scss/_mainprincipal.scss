@@ -1,12 +1,22 @@
-main .section1, .section3{
-    line-height: 2;
-    padding: $pad;
-    .p-2lead{
+main{
+    .restaurante{
         text-align: center;
-        font-size: x-large;
-        font-family: serif;
     }
-    .section2{
+    .párrafo1{
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        margin: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .párrafo2{
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        margin: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .vídeo{
         text-align: center;
         margin: 5rem;
     }

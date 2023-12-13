@@ -1,114 +1,100 @@
-
 *{
  margin: 0;   
  padding: 0;
+ box-sizing: border-box;
 } 
 body{
-    background-color: white;
+    background-color: rgb(224, 194, 194);
 }
-@media screen and (max-widht: 420px){
-    nav{
-        background-color: darkgray;
-    } 
+.bodyinicio{
+    background-color: rgb(224, 194, 194);
+    background-image: url(../img/fondo\ de\ inicio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-nav{
-    padding: 20px;
-    width: 100%; height: 100px;
-    margin: 0 auto;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.bodycontacto{
+    background-color: rgb(224, 194, 194);
+    background-image: url(../img/fondo\ de\ contacto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.logo{
-    width: 40px;
-    margin: auto;
-    padding: 2px;
+.bodygalería{
+    background-color: rgb(224, 194, 194);
+    background-image: url(../img/fondo\ de\ sucursales.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-main .section1, .section3{
-    line-height: 2;
-    padding: 20px;
+.bodymenú{
+    background-color: rgb(224, 194, 194);
+    background-image: url(../img/fondo\ menú.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.p-2lead{
-    text-align: center;
-    font-size: x-large;
+.bodysucursales{
+    background-color: rgb(224, 194, 194);
+    background-image: url(../img/fondo\ sucursales.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.stylepropio{
     font-family: serif;
-}
-.p-4estilopropio{
+    color: rgb(215, 89, 89);
     text-align: center;
-    color: rgb(127, 207, 174);
-    font-family: cursive;
 }
-header{
-    background-color: rgb(255, 247, 239);
-    color: white; 
-    box-sizing: border-box;
-}
-.conteiner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 400px;
-    padding-top: 20px;
-}
-.caja{
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-}
-.principal{
+.sub{
+    font-family: fantasy;
+    color: rgb(215, 89, 89);
     text-align: center;
-    font-size: x-large;
-    font-family: cursive;
+}
+.logocoffee{
+    width: 95px;
+}
+.colonav{
+    background-color: rgb(215, 158, 169);
+}
+.restaurante{
+    text-align: center;
+}
+.párrafo1{
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.párrafo2{
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.vídeo{
+    text-align: center;
     margin: 5rem;
 }
-.subtitulo{
+.contactolocal{
+    margin: 3rem;
     text-align: center;
-    font-size: x-large;
-    font-family: monospace;
-    margin: 2rem;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
 }
-h2{
+.contactoformulario{
+    margin: 3rem;
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: x-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.forms{
+    width: 500px;
+    margin: 0 auto;
+    border: solid rgb(209, 128, 128) 3px;
     padding: 1rem;
 }
 .acordeon{
     width: 700px;
-    margin: 20px auto;
-}
-.acordeon{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    border: solid rgb(194, 183, 183) 2px;
+    margin: 0 auto;
     padding: 1rem;
-}
-.accordion-header{
-    font-family: inherit;
-}
-.contactolocal{
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.contactoformulario{
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Times New Roman', Times, serif;
-}
-.formulario{
-    width: 500px;
-    margin-top: 74px;
-    margin-left: 675px;
-    border: solid rgb(204, 186, 186) 2px;
-    padding: 1rem
-}
-.section2{
-    text-align: center;
-    margin: 5rem;
 }
 .banco{
     width: 100px;
@@ -119,52 +105,89 @@ h2{
 .efectivo{
     width: 100px;
 }
+.imágenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    margin: 30px;
+}
+.principal{
+    text-align: center;
+    font-size: x-large;
+    font-family: cursive;
+    margin: 5rem;
+}
+.subtítulo{
+    text-align: center;
+    font-size: x-large;
+    font-family: monospace;
+    margin: 2rem;
+}
+.menú{
+    text-align: center;
+    margin: 3rem;
+}
+.párrafomenú{
+    margin: 3rem;
+    font-size: 15px;
+}
 .ubicaciones{
     text-align: center;
-    font-size: xx-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-family: cursive;
+    margin: 3rem;
 }
 .mapa{
     text-align: center;
-    font-size: x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-family: cursive;
 }
 .local{
     text-align: center;
-    font-size: x-large;
-    font-family: 'Times New Roman', Times, serif;
-}
-.mapa2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cafetera{
-    text-align: center;
-    margin: 5rem;
-}
-footer{
-    text-align: center;
     font-size: 20px;
-    color: black;
-    background-color: rgba(236, 231, 223, 0.938);
-    width: 90%; height: 100px;
-    margin: 5rem;
-}
-.socialink{
-    text-align: center;
-}
-.seguirclass{
-    font-family: cursive;
-}
-.achicar{
-    width: 500px;
-}
-.estilopropio{
     font-family: 'Times New Roman', Times, serif;
-    color: antiquewhite;
 }
-.colorpropio{
-    background-color: rgba(240, 223, 201, 0.719);
-    border: solid color rgb(92, 31, 31) 20px;
+.sucursal{
+    text-align: center;
+    margin: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
+.maps{
+    text-align: center;
+    margin: 3rem;
+}
+.footer{
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgb(215, 158, 169);
+    padding: 15px;
+    width: 100%; 
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    text-align: center;
+    width: 40px;
+}
+@media (max-width:480px) {
+    .restaurante img{
+        text-align: center;
+        width: 350px;height: 600px;
+    }
+} 
+@media (max-width:480px) {
+    .imágenes img{
+        text-align: center;
+        width: 350px;height: 600px;
+    }
+}   
+@media (max-width:480px) {
+    .menú img{
+        text-align: center;
+        width: 300px;height: 500px;
+    }
+}  
+  

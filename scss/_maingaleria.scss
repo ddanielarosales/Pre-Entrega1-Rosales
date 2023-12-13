@@ -1,7 +1,10 @@
 main galeria.html{
-    .caja{
+    .imágenes{
         display: flex;
-        justify-content: center;
-        padding-top: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img{
+        margin: 30px;
     }
 }

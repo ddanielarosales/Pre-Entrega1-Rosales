@@ -1,10 +1,38 @@
 *{
-    margin: 0;
+    margin: 0;   
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: #ffffff;
-    color: white; 
-    box-sizing: border-box;
+   } 
+   body{
+       background-color: $rosaclarito;
+       .bodyinicio{
+        background-color: $rosaclarito;
+        background-image: url(../img/fondo\ de\ inicio.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bodycontacto{
+        background-color: $rosaclarito;
+        background-image: url(../img/fondo\ de\ contacto.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bodygalería{
+        background-color: $rosaclarito;
+        background-image: url(../img/fondo\ de\ sucursales.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bodymenú{
+        background-color: $rosaclarito;
+        background-image: url(../img/fondo\ menú.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .bodysucursales{
+        background-color: $rosaclarito;
+        background-image: url(../img/fondo\ sucursales.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
