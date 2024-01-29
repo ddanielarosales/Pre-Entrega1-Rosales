@@ -1,7 +1,17 @@
-function saludar () {
-    console.log("¡Hola!");
+const MARCA = "TIENDA"
+const BIENVENIDA = "¡Bienvenido a la $(MARCA)!";
+
+console.log(MARCA);
+
+alert(MARCA);
+let nombre = prompt ("Ingrese su nombre");
+
+
+function saludar(nombre) {
+    console.log("Hola" + nombre);
 }
 
+saludar(nombre);
 
 let usuario = prompt ("¿Has iniciado sesión? Responda si o no");
 let respuesta = "si";
@@ -36,4 +46,5 @@ if (stock >= 1 && descuento == true) {
 } else {
     console.log("producto agotado")
 }
+
 
