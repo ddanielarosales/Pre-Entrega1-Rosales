@@ -48,3 +48,35 @@ if (stock >= 1 && descuento == true) {
 }
 
 
+class Producto {
+    constructor(nombre, precio) {
+        this.nombre = nombre.toUpperCase () ;
+        this.precio = parseFloat (precio) ;
+        this.vendido = false ;
+    }
+    sumaIva() {
+        this.precio = this.precio * 5.25;
+    }
+    vender() {
+        this.vendido = true ; 
+    }
+}
+
+
+//Declaramos un array de productos para almacenar objetos
+const productos = [];
+productos.push (new Producto ("cafe colombia", 5500));
+productos.push (new Producto ("cafe pike place", 5800));
+productos.push (new Producto ("cafe sumatra", 4600));
+productos.push (new Producto ("cafe verona", 6000));
+productos.push (new Producto ("cafe espresso roast", 8000));
+//Iteramos el array con for..of para modificarlos a todos
+for (const producto of productos)
+producto.sumaIva();
+
+const nombres = producto.map((el) => el.nombre)
+console.log(nombres)
+// [ 'cafe colombia', 'cafe pike place', 'cafe sumatra', 'cafe verona', 'cafe espresso roast']
+
+
+
