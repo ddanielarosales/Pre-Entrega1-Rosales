@@ -1,5 +1,6 @@
 const MARCA = "TIENDA"
-const BIENVENIDA = "¡Bienvenido a la $(MARCA)!";
+const BIENVENIDA = "¡Bienvenido a la ${MARCA}!";
+{}
 
 console.log(MARCA);
 
@@ -77,6 +78,100 @@ producto.sumaIva();
 const nombres = producto.map((el) => el.nombre)
 console.log(nombres)
 // [ 'cafe colombia', 'cafe pike place', 'cafe sumatra', 'cafe verona', 'cafe espresso roast']
+
+
+
+
+
+
+
+
+
+
+
+
+
+const producto = [{id: 1, nombre: "cafe colombia", precio: 5500},
+                  {id: 2, nombre: "cafe pike place", precio: 5800},
+                  {id: 3, nombre: "cafe sumatra", precio: 4600},
+                  {id: 4, nombre: "cafe verona", precio: 6000},
+                  {id: 5, nombre: "cafe espresso roast", precio: 8000}]
+for (const producto of productos){
+    let contenedor = document.createElement ("div");
+    contenedor.innerHTML = ``;
+    document.body.appenChild (contenedor);
+}
+
+class Producto{
+    constructor(id, nombre, description, imagen, precio){
+        this.id = id;
+        this.nombre = nombre;
+        this.description = description;
+        this.imagen = imagen;
+        this.precio = precio;
+    }
+}
+
+const productosArray = [
+    new Producto("1","cafe","colombia","url",5500),
+    new Producto("2","cafe", "pike place","url",5800),
+    new Producto("3","cafe","sumatra","url",4600),
+    new Producto("4","cafe","verona","url",6000),
+    new Producto("5","cafe","espresso roast","url",8000),
+ ]
+
+const contenedorProductos= document.getElementById("productos-container");
+
+function agregarCards (productos){
+    productos.forEach (producto =>{
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+        <h2>${producto.nombre}</h2>
+        <img src="" alt="">
+        <p>${producto.description}</p>
+        <p>Precio: $ ${producto.precio}</p>
+        `
+        contenedorProductos.appendChild(card);
+    })
+}
+
+agregarCards(productosArray);
+
+let carrito = []
+let carritoEnLs = JSON.stringify(localStorage.getItem('carrito'))
+
+if (carritoEnLs){
+    carrito = carritoEnLs
+}
+renderCarrito (carrito)
+
+
+const productos = [{id: 1, producto: "cafe colombia", precio: 5500},
+                  {id: 2, producto: "cafe pike place", precio: 5800},
+                  {id: 3, producto: "cafe sumatra", precio: 4600},
+                  {id: 4, producto: "cafe verona", precio: 6000},
+                  {id: 5, producto: "cafe espresso roast", precio: 8000}];
+
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor)};
+//Almacenar array completo
+for (const producto of productos){
+    guardarLocal("listaProductos", JSON.stringify(productos));
+}
+
+const carrito = []
+if (carrito.length === 0) {
+    console.log ("El carrito esta vacio!")
+}
+carrito,length === 0 && console.log ("El carrito esta vacio")
+
+
+
+
+
+
+
+
 
 
 
