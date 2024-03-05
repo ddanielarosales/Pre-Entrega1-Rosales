@@ -49,60 +49,50 @@ if (stock >= 1 && descuento == true) {
 }
 
 
-class Producto {
-    constructor(nombre, precio) {
-        this.nombre = nombre.toUpperCase () ;
-        this.precio = parseFloat (precio) ;
-        this.vendido = false ;
-    }
-    sumaIva() {
-        this.precio = this.precio * 5.25;
-    }
-    vender() {
-        this.vendido = true ; 
-    }
-}
+//class Producto {
+//    constructor(nombre, precio) {
+//        this.nombre = nombre.toUpperCase () ;
+//        this.precio = parseFloat (precio) ;
+//        this.vendido = false ;
+//    }
+//    sumaIva() {
+//        this.precio = this.precio * 5.25;
+//    }
+//    vender() {
+//        this.vendido = true ; 
+//    }
+//}
 
 
 //Declaramos un array de productos para almacenar objetos
-const productos = [];
-productos.push (new Producto ("cafe colombia", 5500));
-productos.push (new Producto ("cafe pike place", 5800));
-productos.push (new Producto ("cafe sumatra", 4600));
-productos.push (new Producto ("cafe verona", 6000));
-productos.push (new Producto ("cafe espresso roast", 8000));
+//const productos = [];
+//productos.push (new Producto ("cafe colombia", 5500));
+//productos.push (new Producto ("cafe pike place", 5800));
+//productos.push (new Producto ("cafe sumatra", 4600));
+//productos.push (new Producto ("cafe verona", 6000));
+//productos.push (new Producto ("cafe espresso roast", 8000));
 //Iteramos el array con for..of para modificarlos a todos
-for (const producto of productos)
-producto.sumaIva();
+//for (const producto of productos)
+//     //producto.sumaIva();
 
-const nombres = producto.map((el) => el.nombre)
-console.log(nombres)
+//const nombres = producto.map((el) => el.nombre)
+//console.log(nombres)
 // [ 'cafe colombia', 'cafe pike place', 'cafe sumatra', 'cafe verona', 'cafe espresso roast']
 
 
 
-
-
-
-
-
-
-
-
-
-
-const producto = [{id: 1, nombre: "cafe colombia", precio: 5500},
+const productos = [{id: 1, nombre: "cafe colombia", precio: 5500},
                   {id: 2, nombre: "cafe pike place", precio: 5800},
                   {id: 3, nombre: "cafe sumatra", precio: 4600},
                   {id: 4, nombre: "cafe verona", precio: 6000},
                   {id: 5, nombre: "cafe espresso roast", precio: 8000}]
-for (const producto of productos){
-    let contenedor = document.createElement ("div");
-    contenedor.innerHTML = ``;
-    document.body.appenChild (contenedor);
-}
+//for (const producto of productos){
+//    let contenedor = document.createElement ("div");
+ //   contenedor.innerHTML = ``;
+//    document.body.appenChild (contenedor);
+//}
 
-class Producto{
+class Producto {
     constructor(id, nombre, description, imagen, precio){
         this.id = id;
         this.nombre = nombre;
@@ -147,11 +137,11 @@ if (carritoEnLs){
 renderCarrito (carrito)
 
 
-const productos = [{id: 1, producto: "cafe colombia", precio: 5500},
-                  {id: 2, producto: "cafe pike place", precio: 5800},
-                  {id: 3, producto: "cafe sumatra", precio: 4600},
-                  {id: 4, producto: "cafe verona", precio: 6000},
-                  {id: 5, producto: "cafe espresso roast", precio: 8000}];
+//const productos = [{id: 1, producto: "cafe colombia", precio: 5500},
+//                  {id: 2, producto: "cafe pike place", precio: 5800},
+//                  {id: 3, producto: "cafe sumatra", precio: 4600},
+//                  {id: 4, producto: "cafe verona", precio: 6000},
+//                  {id: 5, producto: "cafe espresso roast", precio: 8000}];
 
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor)};
 //Almacenar array completo
@@ -159,7 +149,7 @@ for (const producto of productos){
     guardarLocal("listaProductos", JSON.stringify(productos));
 }
 
-const carrito = []
+//const carrito = []
 if (carrito.length === 0) {
     console.log ("El carrito esta vacio!")
 }
