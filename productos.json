@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "nombre": "cafe colombia",
+        "img": "../cafe colombia.jpg",
+        "precio": 5500
+    },
+    {
+        "id": 2,
+        "nombre": "cafe pike place",
+        "img": "../cafe pike place.jpg",
+        "precio": 5800
+    },
+    {
+        "id": 3,
+        "nombre": "cafe sumatra",
+        "img": "../cafe sumatra.jpg",
+        "precio": 4600
+    },
+    {
+        "id": 4,
+        "nombre": "cafe verona",
+        "img": "../cafe verona.jpg",
+        "precio": 6000
+    },
+    {
+        "id": 5,
+        "nombre": "cafe espresso roast",
+        "img": "../cafe espresso roast.jpg",
+        "precio": 8000
+    }
+
+
+
+
+
+
+
+
+]

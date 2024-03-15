@@ -1,3 +1,48 @@
+const btnUno = getElementById("btnUno");
+
+btnUno.addEventListener("click", ()=>{
+    Swal.fire({
+        title: "TIENDA CAFE ",
+        text: "Proba nuestros tipos de cafe",
+        imageUrl: "../lista de verificacion.jpg",
+        confirmButtonText: "aceptar",
+    })
+
+})
+
+const btnDos =getElementById("btnDos");
+btnDos.addEventListener("click", ()=>{
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "../lista de verificacion.jpg",
+        title: "Producto comprado"
+      });
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const MARCA = "TIENDA"
 const BIENVENIDA = "¡Bienvenido a la ${MARCA}!";
 {}
@@ -103,11 +148,11 @@ class Producto {
 }
 
 const productosArray = [
-    new Producto("1","cafe","colombia","url",5500),
-    new Producto("2","cafe", "pike place","url",5800),
-    new Producto("3","cafe","sumatra","url",4600),
-    new Producto("4","cafe","verona","url",6000),
-    new Producto("5","cafe","espresso roast","url",8000),
+    new Producto("1","Café","Colombia","url",5500),
+    new Producto("2","Café", "Pike Place","url",5800),
+    new Producto("3","Café","Sumatra","url",4600),
+    new Producto("4","Café","Verona","url",6000),
+    new Producto("5","Café","Espresso Roast","url",8000),
  ]
 
 const contenedorProductos= document.getElementById("productos-container");
@@ -127,6 +172,22 @@ function agregarCards (productos){
 }
 
 agregarCards(productosArray);
+
+
+function agregarProductosAlCarrito (productos){
+    productos.forEach (producto =>{
+        const card = document.createElement("div");
+        card.classList.add("carrito");
+        card.innerHTML = `
+        <h2>${producto.nombre}</h2>
+        <img src="" alt="">
+        <p>${producto.description}</p>
+        <p>Precio: $ ${producto.precio}</p>
+        `
+        contenedorProductos.appendChild(carrito);
+    })
+}
+agregarProductosAlCarrito(productosArray);
 
 let carrito = []
 let carritoEnLs = JSON.stringify(localStorage.getItem('carrito'))
@@ -154,6 +215,9 @@ if (carrito.length === 0) {
     console.log ("El carrito esta vacio!")
 }
 carrito,length === 0 && console.log ("El carrito esta vacio")
+
+
+fetch('./productos.json')
 
 
 
