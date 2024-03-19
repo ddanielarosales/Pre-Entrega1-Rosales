@@ -1,16 +1,16 @@
-const btnUno = getElementById("btnUno");
+const btnUno = document.getElementById("btnUno");
 
 btnUno.addEventListener("click", ()=>{
     Swal.fire({
         title: "TIENDA CAFE ",
-        text: "Proba nuestros tipos de cafe",
+        text: "¡Proba nuestros tipos de café!",
         imageUrl: "../lista de verificacion.jpg",
         confirmButtonText: "aceptar",
     })
 
 })
 
-const btnDos =getElementById("btnDos");
+const btnDos = document.getElementById("btnDos");
 btnDos.addEventListener("click", ()=>{
     const Toast = Swal.mixin({
         toast: true,

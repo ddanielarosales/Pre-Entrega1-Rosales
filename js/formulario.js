@@ -1,4 +1,4 @@
-// {/* <form id= "formulario">
+// {/* <form id="formulario">
 //     <input type= "email"></input>
 //     <input type= "password"></input>
 //     <input type= "submit" value="Enviar"></input>
