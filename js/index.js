@@ -130,22 +130,35 @@ const finalizarCompraButton = document.getElementById("finalizar-compra");
 
 finalizarCompraButton.addEventListener("click", finalizarCompra);
 
-const url = "./productos.json"
+
+// Estilos para el botón de finalizar compra
+finalizarCompraButton.style.backgroundColor = "#4CAF50"; /* Verde */
+finalizarCompraButton.style.border = "none";
+finalizarCompraButton.style.color = "white";
+finalizarCompraButton.style.padding = "15px 32px";
+finalizarCompraButton.style.textAlign = "center";
+finalizarCompraButton.style.textDecoration = "none";
+finalizarCompraButton.style.display = "inline-block";
+finalizarCompraButton.style.fontSize = "16px";
+
+
+
+const url = "../productos.json"
 const app = document.getElementById("app");
 
 fetch(url)
 .then(response => response.json())
 .then((datos) =>{
     console.log(datos)
-    mostrarUsuario(datos);
+    mostrarCafe(datos);
 })
 .catch(error => console.log(error))
 .finally(() => console.log("proceso finalizado"));
 
-function mostrarUsuario(datos){
-    datos.forEach(usuarios => {
+function mostrarCafe(datos){
+    datos.forEach(cafe => {
         const div = document.createElement("div");
-        div.innerText = `${usuarios.name}`;
+        div.innerText = `${cafe.nombre}`;
         app.appendChild(div)
     })
 }
