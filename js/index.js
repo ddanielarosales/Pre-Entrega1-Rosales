@@ -130,6 +130,25 @@ const finalizarCompraButton = document.getElementById("finalizar-compra");
 
 finalizarCompraButton.addEventListener("click", finalizarCompra);
 
+const url = "./productos.json"
+const app = document.getElementById("app");
+
+fetch(url)
+.then(response => response.json())
+.then((datos) =>{
+    console.log(datos)
+    mostrarUsuario(datos);
+})
+.catch(error => console.log(error))
+.finally(() => console.log("proceso finalizado"));
+
+function mostrarUsuario(datos){
+    datos.forEach(usuarios => {
+        const div = document.createElement("div");
+        div.innerText = `${usuarios.name}`;
+        app.appendChild(div)
+    })
+}
 
 
 
